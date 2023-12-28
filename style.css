@@ -1,0 +1,421 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(117, 135, 168);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+}
+@media screen and (min-width: 960px) {
+    .wrapper{
+        position: relative;
+        background-color: bisque;
+        border: 2px solid #fff;
+        width: 780px;
+        height: 680px;
+        display: flex;
+        justify-content: center;
+        background-image: url(pexels-eberhard-grossgasteiger-1612351.jpg);
+        background-size: cover;
+        
+    }
+    .wrapper .form-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        height: 100%;
+        
+    }
+    .form-box input#first{
+        width: 110%;
+        height: 50px;
+        padding-left: 50px;
+        margin: 15px 0;
+        background: transparent;
+        border: 2px solid #fff;
+        outline: none;
+        color: white;
+    }
+    .wrapper .form-box .input-box{
+        position: relative;
+        width: 100%;
+        height: 50%;
+        /* margin: 25px 0; */
+    }
+    .form-box .input-box i{
+        position: absolute;
+        top: 25%;
+        left: 25px;
+        transform: translate(-40%);
+        color: #fff;
+        font-size: 30px;
+    }
+    button{
+        position: absolute;
+        left: 40%;
+        width: 200px;
+        height: 40px;
+        background: transparent;
+        margin-top: 10px;
+        color: #fff;
+        border:2px solid #fff;
+        cursor: pointer;
+    }
+    button a {
+        color: #fff;
+        text-decoration: none;
+    
+    }
+    .content{
+        /* position: relative; */
+        margin-bottom: 35px;
+    }
+    h1{
+        position: absolute;
+        font-weight: 900;
+        top: 27%;
+        left: 34%;
+        color: #fff;
+    }
+    p{
+        position: absolute;
+        top: 35%;
+        left: 22.5%;
+        font-size: 16px;
+        color: rgba(245, 245, 245, 0.5);    
+        
+    }
+    .img{
+    max-width: 100%;
+    height: auto; 
+    }
+    .checkbox{
+        position: relative;
+        background-color: transparent;
+        width: 25px;
+        height: 25px;
+        margin-left: 3px;
+    }
+    span.check{
+        position: absolute;
+        font-size: 12px;
+        /* width: 30px;
+        height: 30px; */
+        padding-top: 5px;
+        padding-left: 7px;
+        /* background-color: aqua; */
+        color: #fff;
+    }
+    div.forgot{
+        position: absolute;
+        bottom: 31%;
+        right:  20.5%;
+        font-size: 11px;
+        color: #fff;
+        cursor: pointer;
+    }
+   }
+
+   @media screen and (max-width: 960px) and (min-width:768px)  {
+    
+    .wrapper{
+        position: relative;
+        background-color: bisque;
+        border: 2px solid #fff;
+        width: 680px;
+        height: 580px;
+        display: flex;
+        justify-content: center;
+        background-image: url(pexels-eberhard-grossgasteiger-1612351.jpg);
+        background-size: cover;
+        
+    }
+    .wrapper .form-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        height: 100%;
+        
+    }
+    .form-box input#first{
+        width: 110%;
+        height: 50px;
+        padding-left: 50px;
+        margin: 15px 0;
+        background: transparent;
+        border: 2px solid #fff;
+        outline: none;
+        color: white;
+    }
+    .wrapper .form-box .input-box{
+        position: relative;
+        width: 100%;
+        height: 50%;
+        /* margin: 25px 0; */
+    }
+    .form-box .input-box i{
+        position: absolute;
+        top: 25%;
+        left: 25px;
+        transform: translate(-40%);
+        color: #fff;
+        font-size: 30px;
+    }
+    button{
+        position: absolute;
+        left: 40%;
+        width: 200px;
+        height: 40px;
+        background: transparent;
+        margin-top: 10px;
+        color: #fff;
+        border:2px solid #fff;
+        cursor: pointer;
+    }
+    button a {
+        color: #fff;
+        text-decoration: none;
+    
+    }
+    .content{
+        /* position: relative; */
+        margin-bottom: 35px;
+    }
+    h1{
+        position: absolute;
+        font-weight: 900;
+        top: 24%;
+        left: 32%;
+        color: #fff;
+    }
+    p{
+        position: absolute;
+        top: 32%;
+        left: 18%;
+        font-size: 16px;
+        color: rgba(245, 245, 245, 0.5);    
+        
+    }
+    .img{
+    max-width: 100%;
+    height: auto; 
+    }
+    .checkbox{
+        position: relative;
+        background-color: transparent;
+        width: 25px;
+        height: 25px;
+        margin-left: 3px;
+    }
+    span.check{
+        position: absolute;
+        font-size: 12px;
+        /* width: 30px;
+        height: 30px; */
+        padding-top: 5px;
+        padding-left: 7px;
+        /* background-color: aqua; */
+        color: #fff;
+    }
+    div.forgot{
+        position: absolute;
+        bottom: 27%;
+        right:  20.5%;
+        font-size: 11px;
+        color: #fff;
+        cursor: pointer;
+    }
+   }
+
+@media screen and (max-width: 768px) and (min-width:375px) {
+    .wrapper{
+        position: relative;
+        background-color: bisque;
+        border: 2px solid #fff;
+        width: 330px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        background-image: url(pexels-eberhard-grossgasteiger-1612351.jpg);
+        background-size: cover;
+        
+    }
+    .wrapper .form-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        height: 100%;
+        margin-left: -20px;
+    }
+    .form-box input#first{
+        width: 110%;
+        height: 50px;
+        padding-left: 50px;
+        margin: 15px 0;
+        background: transparent;
+        border: 2px solid #fff;
+        
+    }
+    .wrapper .form-box .input-box{
+        position: relative;
+        width: 100%;
+        height: 50%;
+        /* margin: 25px 0; */
+    }
+    .form-box .input-box i{
+        position: absolute;
+        top: 25%;
+        left: 25px;
+        transform: translate(-40%);
+        color: #fff;
+        font-size: 30px;
+    }
+    button{
+        position: absolute;
+        bottom: 55px;
+        left: 26%;
+        width: 170px;
+        height: 40px;
+        background: transparent;
+        margin-top: 10px;
+        color: #fff;
+        border:2px solid #fff;
+    }
+    button a {
+        color: #fff;
+        text-decoration: none;
+    
+    }
+    .content{
+        /* position: relative; */
+        margin-bottom: -20px;
+    }
+    h1{
+        position: absolute;
+        font-size: 27px;
+        font-weight: 900;
+        top: 10%;
+        left: 15%;
+        color: #fff;
+    }
+    p{
+        position: absolute;
+        top: 20%;
+        left: 7%;
+        font-size: 10px;
+        color: rgba(245, 245, 245, 0.5);    
+        
+    }
+    .img{
+    max-width: 100%;
+    height: auto; 
+    }
+    .checkbox{
+        position: relative;
+        background-color: transparent;
+        width: 20px;
+        height: 20px;
+        margin-left: 3px;
+    }
+    span.check{
+        position: absolute;
+        font-size: 10px;
+        /* width: 30px;
+        height: 30px; */
+        padding-top: 5px;
+        padding-left: 7px;
+        /* background-color: aqua; */
+        color: #fff;
+    }
+    div.forgot{
+        position: absolute;
+        bottom: 30%;
+        right:  3%;
+        font-size: 10px;
+        color: #fff;
+    }
+    .left ul li#hidden{
+        display: none;
+    }
+
+}
+
+/* .hdr{
+    position: absolute;
+    color: #fff;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    height: 50px;
+    padding-top: 10px;
+    font-size: 20px;
+} */
+.ftr .left{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 15px 40px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, .4);
+}
+.ftr .right{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 15px 40px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, .4);
+}
+.left ul{
+    position: absolute;
+    /* margin: 0; */
+    /* padding: 0; */
+    list-style: none;
+    top:0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    margin: 10px 0;
+    padding: 12px 0;
+}
+.left ul li{
+    display: inline;
+    padding: 5px 17px;
+    
+}
+.left ul li:hover{
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+}
+.right input{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(#4d6374 , #8b95a8);
+    outline: none;
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+.hdr ul{
+    border-bottom: 2px solid #4d6374;
+}
+
+
+
+
+
